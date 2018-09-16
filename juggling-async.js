@@ -15,7 +15,7 @@ function print (count) {
   };
 }
 
-// get data from URL_0 (1/3)
+// get data from URL_0 (1/3) - can be improved by moving code duplication into function
 http.get(URLs[0], function (response) {
   response.setEncoding('utf8');
   response.on("error", console.error);
